@@ -74,8 +74,8 @@ ammoTypes: {
     collidesTiles: true
     despawnEffect: explosion
     ammoMultiplier: 1
-    frontColor: "f9a3c7"
-    backColor: "cb8ebf"
+    frontColor: "fff8e8"
+    backColor: "f9c27a"
     fragBullets: 8
     fragBullet: {
       type: BasicBulletType
@@ -90,8 +90,8 @@ ammoTypes: {
       collides: true
       collidesTiles: true
       lifetime: 10
-      frontColor: "f9a3c7"
-      backColor: "cb8ebf"
+      frontColor: "fff8e8"
+      backColor: "f9c27a"
     }
   }
   plastanium: {
@@ -107,8 +107,8 @@ ammoTypes: {
     collidesTiles: true
     despawnEffect: plasticExplosion
     ammoMultiplier: 1
-    frontColor: "ffd37f"
-    backColor: "e29557"
+    frontColor: "fffac6"
+    backColor: "d8d97f"
     fragBullets: 16
     fragBullet: {
       type: BasicBulletType
@@ -121,8 +121,8 @@ ammoTypes: {
       collides: true
       collidesTiles: true
       lifetime: 20
-      frontColor: "ffd37f"
-      backColor: "e29557"
+      frontColor: "fffac6"
+      backColor: "d8d97f"
     }
   }
   surge-alloy: {
@@ -142,8 +142,8 @@ ammoTypes: {
     despawnEffect: explosion
     ammoMultiplier: 2
     status: shocked
-    frontColor: "ffff7e"
-    backColor: "ba894b"
+    frontColor: "fff8e8"
+    backColor: "f9c27a"
     fragBullets: 10
     fragBullet: {
       type: BasicBulletType
@@ -162,8 +162,8 @@ ammoTypes: {
       collidesTiles: true
       status: shocked
       lifetime: 20
-      frontColor: "ffff7e"
-      backColor: "ba894b"
+      frontColor: "fff8e8"
+      backColor: "f9c27a"
     }
   }
   pyratite: {
@@ -181,10 +181,10 @@ ammoTypes: {
     splashDamageRadius: 35
     despawnEffect: massiveExplosion
     ammoMultiplier: 2
-    status: melting
+    status: burning
     makeFire: true
-    frontColor: "ffaa5f"
-    backColor: "d37f47"
+    frontColor: "f8ad42"
+    backColor: "f68021"
     fragBullets: 12
     fragBullet: {
       type: BasicBulletType
@@ -197,8 +197,12 @@ ammoTypes: {
       status: burning
       makeFire: true
       lifetime: 20
-      frontColor: "ffaa5f"
-      backColor: "d37f47"
+      frontColor: "f8ad42"
+      backColor: "f68021"
+      collidesAir: true
+      collidesGround: true
+      collides: true
+      collidesTiles: true
     }
   }
 }
