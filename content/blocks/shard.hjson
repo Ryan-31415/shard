@@ -112,7 +112,7 @@ ammoTypes: {
     fragBullets: 16
     fragBullet: {
       type: BasicBulletType
-      damage: 38
+      damage: 45
       speed: 6
       width: 15
       height: 15
