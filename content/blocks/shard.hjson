@@ -42,8 +42,8 @@ ammoTypes: {
     despawnEffect: explosion
     ammoMultiplier: 1
     reloadMultiplier: 1.5
-    frontColor: "feb380"
-    backColor: "ea8878" 
+    frontColor: "fff8e8"
+    backColor: "f9c27a" 
     fragBullets: 10
                     
     fragBullet: {
@@ -57,8 +57,8 @@ ammoTypes: {
       collides: true
       collidesTiles: true
       lifetime: 15
-      frontColor: "feb380"
-      backColor: "ea8878" 
+      frontColor: "fff8e8"
+      backColor: "f9c27a"
     }
   }
   thorium: {
