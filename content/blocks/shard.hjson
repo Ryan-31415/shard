@@ -1,8 +1,8 @@
 type: ItemTurret
 name: "샤드"
-description: "많은 전력과 냉각수, 탄환이 공급되면 장거리에 걸쳐 플라즈마 파편탄 세례를 퍼붓습니다."
+description: "상당한 전력과 냉각수, 탄환이 공급되면 장거리에 걸쳐 플라즈마 파편탄 세례를 퍼붓습니다."
 size: 7
-health: 8650
+health: 8750
 buildCost: 1
 
 requirements: [
@@ -18,7 +18,7 @@ requirements: [
 ]
 
 category: turret
-range: 338
+range: 340
 inaccuracy: 3
 reload: 3.5
 ammoCapacity: 120
@@ -209,10 +209,10 @@ ammoTypes: {
 }
 
 consumes: {
-  power: 25
+  power: 36
   liquid: {
     liquid: cryofluid
-    amount: 1.6
+    amount: 3.2
     boost: false
     optional: false   // 이제 액체 없으면 발사 안 됨
   }
