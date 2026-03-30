@@ -1,20 +1,20 @@
 type: ItemTurret
 name: "샤드"
 description: "많은 전력과 냉각수, 탄환이 공급되면 장거리에 걸쳐 플라즈마 파편탄 세례를 퍼붓습니다."
-size: 5
-health: 5500
+size: 7
+health: 8650
 buildCost: 1
-buildSpeedMultiplier: 2
 
 requirements: [
-  copper/1800
-  lead/1250
-  graphite/1100
-  titanium/1400
-  thorium/1250
-  silicon/1000
-  plastanium/750
-  surge-alloy/900
+  copper/4000
+  lead/2750
+  graphite/2000
+  titanium/1800
+  thorium/1750
+  silicon/1300
+  plastanium/1550
+  phase-fabric/1300
+  surge-alloy/1550
 ]
 
 category: turret
@@ -30,7 +30,7 @@ shake: 3
 ammoTypes: {
   graphite: {
     type: BasicBulletType
-    damage: 50
+    damage: 60
     speed: 9
     sprite: "shell"
     width: 16
@@ -44,11 +44,10 @@ ammoTypes: {
     reloadMultiplier: 1.5
     frontColor: "fff8e8"
     backColor: "f9c27a" 
-    fragBullets: 10
-                    
+    fragBullets: 10           
     fragBullet: {
       type: BasicBulletType
-      damage: 36
+      damage: 40
       speed: 6
       width: 18
       height: 18
@@ -56,14 +55,14 @@ ammoTypes: {
       collidesGround: true
       collides: true
       collidesTiles: true
-      lifetime: 15
+      lifetime: 16
       frontColor: "fff8e8"
       backColor: "f9c27a"
     }
   }
   thorium: {
     type: BasicBulletType
-    damage: 90
+    damage: 100
     speed: 9
     sprite: "shell"
     width: 16
@@ -76,7 +75,7 @@ ammoTypes: {
     ammoMultiplier: 1
     frontColor: "fff8e8"
     backColor: "f9c27a"
-    fragBullets: 8
+    fragBullets: 7
     fragBullet: {
       type: BasicBulletType
       damage: 72
@@ -84,19 +83,19 @@ ammoTypes: {
       width: 22
       height: 22
       pierce: true
-      pierceCap: 1
+      pierceCap: 2
       collidesAir: true
       collidesGround: true
       collides: true
       collidesTiles: true
-      lifetime: 10
+      lifetime: 12
       frontColor: "fff8e8"
       backColor: "f9c27a"
     }
   }
   plastanium: {
     type: BasicBulletType
-    damage: 75
+    damage: 85
     speed: 9
     sprite: "shell"
     width: 16
@@ -109,10 +108,10 @@ ammoTypes: {
     ammoMultiplier: 2
     frontColor: "fffac6"
     backColor: "d8d97f"
-    fragBullets: 16
+    fragBullets: 18
     fragBullet: {
       type: BasicBulletType
-      damage: 40
+      damage: 57
       speed: 6
       width: 15
       height: 15
@@ -120,6 +119,8 @@ ammoTypes: {
       collidesGround: true
       collides: true
       collidesTiles: true
+      pierce: true
+      pierceCap: 1
       lifetime: 20
       frontColor: "fffac6"
       backColor: "d8d97f"
@@ -127,35 +128,35 @@ ammoTypes: {
   }
   surge-alloy: {
     type: BasicBulletType
-    damage: 100
+    damage: 110
     speed: 9
     sprite: "shell"
     width: 16
     height: 24
     lightning: 2
-    lightningLength: 14
-    lightningDamage: 20
+    lightningLength: 15
+    lightningDamage: 28
     collidesAir: true
     collidesGround: true
     collides: true
     collidesTiles: true
     despawnEffect: explosion
-    ammoMultiplier: 3
+    ammoMultiplier: 2
     status: shocked
     frontColor: "fff8e8"
     backColor: "f9c27a"
-    fragBullets: 10
+    fragBullets: 12
     fragBullet: {
       type: BasicBulletType
-      damage: 67
+      damage: 83
       speed: 6
       width: 18
       height: 18
       lightning: 2
       lightningLength: 7
-      lightningDamage: 14
+      lightningDamage: 21
       pierce: true
-      pierceCap: 1
+      pierceCap: 3
       collidesAir: true
       collidesGround: true
       collides: true
@@ -168,7 +169,7 @@ ammoTypes: {
   }
   pyratite: {
     type: BasicBulletType
-    damage: 45
+    damage: 50
     speed: 9
     sprite: "shell"
     width: 16
@@ -177,8 +178,8 @@ ammoTypes: {
     collidesGround: true
     collides: true
     collidesTiles: true
-    splashDamage: 50
-    splashDamageRadius: 35
+    splashDamage: 65
+    splashDamageRadius: 37
     despawnEffect: massiveExplosion
     ammoMultiplier: 2
     status: burning
@@ -192,11 +193,11 @@ ammoTypes: {
       speed: 6
       width: 15
       height: 15
-      splashDamage: 18
-      splashDamageRadius: 16
+      splashDamage: 33
+      splashDamageRadius: 18
       status: burning
       makeFire: true
-      lifetime: 20
+      lifetime: 13
       frontColor: "f8ad42"
       backColor: "f68021"
       collidesAir: true
@@ -220,16 +221,6 @@ liquidCapacity: 120
 
 research: {
   parent: "spectre"
-  requirements: [
-    copper/90000
-    lead/65000
-    graphite/60000
-    titanium/75000
-    thorium/65000
-    silicon/55000
-    plastanium/22500
-    surge-alloy/30000
-  ]
   objectives: [
     {
       type: SectorComplete
