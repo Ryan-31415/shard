@@ -21,6 +21,7 @@ category: turret
 range: 340
 inaccuracy: 3
 reload: 3.5
+rotateSpeed: 2
 ammoCapacity: 120
 targetAir: true
 targetGround: true
