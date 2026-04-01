@@ -121,7 +121,6 @@ ammoTypes: {
       speed: 6
       width: 15
       height: 15
-      knockback: 0.1
       collidesAir: true
       collidesGround: true
       collides: true
@@ -181,7 +180,7 @@ ammoTypes: {
     damage: 50
     speed: 9
     sprite: "shell"
-    knockback: 0.7
+    knockback: 0.6
     width: 16
     height: 24
     collidesAir: true
