@@ -220,15 +220,15 @@ ammoTypes: {
 }
 
 consumes: {
-  power: 36
+  power: 33
   liquid: {
     liquid: cryofluid
-    amount: 3.2
+    amount: 2.6
     boost: false
-    optional: false   // 이제 액체 없으면 발사 안 됨
+    optional: false
   }
 }
-liquidCapacity: 120
+liquidCapacity: 360
 
 research: {
   parent: "spectre"
