@@ -192,6 +192,7 @@ ammoTypes: {
     despawnEffect: massiveExplosion
     ammoMultiplier: 2
     status: burning
+    statusDuration: 720
     makeFire: true
     frontColor: "f8ad42"
     backColor: "f68021"
@@ -206,6 +207,7 @@ ammoTypes: {
       splashDamage: 33
       splashDamageRadius: 18
       status: burning
+      statusDuration: 600
       makeFire: true
       lifetime: 13
       frontColor: "f8ad42"
