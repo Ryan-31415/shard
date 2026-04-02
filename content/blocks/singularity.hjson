@@ -38,24 +38,24 @@ ammoTypes: {
     pierceCap: -1
     armorPierce: true
     ammoMultiplier: 1
-    bulidingDamageMultiplier: 0.1
+    buildingDamageMultiplier: 0.1 // 오타 수정: buliding -> building
     
-    frontColor: "f3e979"
-    backColor: "ffffff"
+    // --- 궤적 시각화 핵심 수정 ---
+    // RailBulletType은 colors 배열을 사용합니다.
+    colors: ["f3e979", "ffffff"] 
     
-    // 2. 궤적이 화면에 머무는 시간 (이게 없으면 순식간에 사라짐)
-    lifetime: 30 
-    
-    // 3. 궤적의 굵기
+    // 궤적(선)의 굵기입니다. pointWidth 대신 strokeWidth를 사용해야 할 수도 있습니다.
+    strokeWidth: 8
+    // 궤적의 점(Point) 굵기입니다.
     pointWidth: 16
     
-    // 4. 이펙트 설정 보완
+    lifetime: 60
+    // ----------------------------
+    
     lineEffect: railTrail
-    updateEffect: none    
     shootEffect: instShoot
     hitEffect: massiveExplosion
-    // ------------------------------
-
+    
     collidesAir: true
     collidesGround: true
   }
