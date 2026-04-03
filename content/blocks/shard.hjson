@@ -2,7 +2,7 @@ type: ItemTurret
 name: "Shard"
 description: "..."
 size: 7
-health: 8750
+health: 9245
 buildCost: 1
 
 requirements: [

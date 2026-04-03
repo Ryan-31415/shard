@@ -21,7 +21,7 @@ range: 1240
 inaccuracy: 0
 reload: 333
 rotateSpeed: 1
-ammoPerShot: 17
+ammoPerShot: 16
 ammoCapacity: 100
 targetAir: true
 targetGround: true
@@ -33,32 +33,27 @@ ammoTypes: {
     type: RailBulletType
     damage: 12500
     length: 1240
-    hitSize: 16
-    pierce: true
-    pierceCap: -1
-    armorPierce: true
-    ammoMultiplier: 1
-    buildingDamageMultiplier: 0.1 // 오타 수정: buliding -> building
     
-    // --- 궤적 시각화 핵심 수정 ---
-    // RailBulletType은 colors 배열을 사용합니다.
-    colors: ["f3e979", "ffffff"] 
+    // 시각 효과 핵심: 3단계 색상 지정
+    colors: ["ffffff", "f3e979", "ffbb64"] 
     
-    // 궤적(선)의 굵기입니다. pointWidth 대신 strokeWidth를 사용해야 할 수도 있습니다.
+    // 굵기 강조 (사거리가 1240이므로 선이 굵어야 잘 보임)
     strokeWidth: 8
-    // 궤적의 점(Point) 굵기입니다.
-    pointWidth: 16
+    pointWidth: 14
     
-    lifetime: 60
-    // ----------------------------
+    // 잔상 시간 (60틱은 1초간 선이 화면에 남음을 의미)
+    lifetime: 40 
     
-    lineEffect: railTrail
+    // 효과 추가
     shootEffect: instShoot
     hitEffect: massiveExplosion
+    updateEffect: railTrail // lineEffect 대신 updateEffect 혹은 trailEffect 검토
+    updateEffectSeg: 40    // 궤적 입자 간격
     
-    collidesAir: true
-    collidesGround: true
-  }
+    buildingDamageMultiplier: 0.1
+    pierce: true
+    pierceCap: -1
+}
 }
 
 consumes: {
